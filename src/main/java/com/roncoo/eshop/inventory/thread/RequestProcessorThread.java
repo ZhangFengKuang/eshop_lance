@@ -45,7 +45,7 @@ public class RequestProcessorThread implements Callable<Boolean> {
                             flagMap.put(request.getProductId(), false);
                         }
                         if(flag != null && !flag) {//说明前面有个读请求
-                            return true;//排除重复读请求进行优化
+                            return true; //排除重复读请求进行优化
                         }
                     }
                 }
